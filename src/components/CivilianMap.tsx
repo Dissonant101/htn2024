@@ -1,8 +1,10 @@
 "use client";
 
+import { useState, useContext, useEffect } from "react";
 import { MapView, useMapData } from "@mappedin/react-sdk";
 import "@mappedin/react-sdk/lib/esm/index.css";
 import CivilianMapPath from "./CivilianMapPath";
+import { GeolocationContext } from "../../contexts/GeolocationContext";
 
 export default function CivilianMap() {
   const { isLoading, error, mapData } = useMapData({
@@ -19,13 +21,11 @@ export default function CivilianMap() {
     return <div>{error.message}</div>;
   }
 
-  return (
-    mapData ?
+  return mapData ? (
     <div className="w-full h-full">
       <MapView mapData={mapData}>
         <CivilianMapPath />
       </MapView>
     </div>
-    : null
-  );
+  ) : null;
 }

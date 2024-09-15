@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "logo.png", // or "/favicon.png" if you're using a PNG
     shortcut: "logo.png",
-  }
+  },
 };
 
 export default function RootLayout({
@@ -35,9 +35,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <GeolocationProvider>
-          <ConvexClientProvider>
-            {children}
-          </ConvexClientProvider>
+          <ConvexClientProvider>{children}</ConvexClientProvider>
         </GeolocationProvider>
       </body>
     </html>
