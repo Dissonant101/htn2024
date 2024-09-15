@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { GeolocationProvider } from "../../contexts/GeolocationContext";
+import { ConvexClientProvider } from "./ConvexClientProvider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -34,7 +35,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <GeolocationProvider>
-          {children}
+          <ConvexClientProvider>
+            {children}
+          </ConvexClientProvider>
         </GeolocationProvider>
       </body>
     </html>

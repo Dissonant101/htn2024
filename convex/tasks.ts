@@ -28,4 +28,11 @@ const edit = mutation({
   },
 });
 
-export { get, add, edit }
+const remove = mutation({
+  args: { id: v.id("coordinates") },
+  handler: async (ctx, { id }) => {
+    await ctx.db.delete(id);
+  },
+});
+
+export { get, add, edit, remove };
