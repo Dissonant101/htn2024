@@ -22,19 +22,6 @@ export const GeolocationProvider: React.FC<{ children: ReactNode }> = ({
 }) => {
   const [position, setPosition] = useState<any>(null);
 
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition((p) => {
-      const timeout = setTimeout(() => {
-        setPosition({
-          latitude: p.coords.latitude,
-          longitude: p.coords.longitude,
-        });
-      }, 1000);
-
-      return () => clearTimeout(timeout);
-    });
-  }
-
   return (
     <GeolocationContext.Provider
       value={{ position: position, setPosition: setPosition }}

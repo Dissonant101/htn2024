@@ -42,10 +42,25 @@ export default function CivilianMapPath() {
 
   useEffect(() => {
     const minPath = getNearestFireExitPath();
+
     if (minPath) {
       mapView.Navigation.clear();
       mapView.Navigation.draw(minPath);
     }
+
+    const timeout = setTimeout(() => {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition((p) => {
+          setPosition({
+            latitude: p.coords.latitude,
+            longitude: p.coords.longitude,
+          });
+        });
+
+        clearTimeout(timeout);
+        console.log(position.latitude, position.longitude);
+      }
+    }, 1000);
   }, [position]);
 
   return null;
