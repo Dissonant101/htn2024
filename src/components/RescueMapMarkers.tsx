@@ -21,19 +21,13 @@ export default function RescueMapMarkers() {
     }
 
     fetchMarkers().then((coordinates) => {
-        console.log(coordinates)
-
         if (!coordinates) return;
 
         coordinates!.forEach((coordinate) => {
-
             mapView.Markers.add(mapView.createCoordinate(coordinate.lat, coordinate.long), 
             '<div>🔴</div>');
-            
         });
     })
 
-
-    return 
-
+    return null;
 }
