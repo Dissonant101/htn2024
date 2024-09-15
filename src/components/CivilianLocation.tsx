@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useMutation } from 'convex/react';
-import { api } from '../convex/_generated/api';
-import { Id } from "../convex/_generated/dataModel";
-import { useGeolocation } from '../contexts/GeolocationContext';
+import { api } from '../../convex/_generated/api';
+import { Id } from "../../convex/_generated/dataModel";
+import { useGeolocation } from '../../contexts/GeolocationContext';
 
 interface Position {
   latitude: number | null;

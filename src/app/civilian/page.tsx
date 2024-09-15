@@ -1,8 +1,8 @@
 "use client";
 
 import MyNavbar from "@/components/MyNavbar";
-import MyMap from "@/components/MyMap";
-import CivilianLocation from "../../../components/CivilianLocation";
+import CivilianMap from "@/components/CivilianMap";
+import CivilianLocation from "../../components/CivilianLocation";
 
 export default function Civilian() {
   return (
@@ -11,9 +11,7 @@ export default function Civilian() {
         <div className="flex-shrink-0">
           <MyNavbar />
         </div>
-        <div className="flex-grow">
-          <MyMap />
-        </div>
+        <CivilianMap />
     </div>
   );
 }

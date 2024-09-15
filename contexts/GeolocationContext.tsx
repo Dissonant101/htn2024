@@ -11,7 +11,7 @@ interface GeolocationContextProps {
   position: Position;
 }
 
-const GeolocationContext = createContext<GeolocationContextProps | undefined>(undefined);
+export const GeolocationContext = createContext<GeolocationContextProps | undefined>(undefined);
 
 export const GeolocationProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [position, setPosition] = useState<Position>({ latitude: null, longitude: null });
