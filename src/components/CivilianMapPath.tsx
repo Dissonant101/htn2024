@@ -38,23 +38,15 @@ export default function CivilianMapPath() {
       );
       setFireExits(filteredFireExits);
     }
-  }, [mapData]);
-
-  // Determine the nearest fire exit path
-  const [nearestFireExitPath, setNearestFireExitPath] = useState<any>(null);
+  }, []);
 
   useEffect(() => {
-    if (fireExits.length > 0) {
-      const path = getNearestFireExitPath();
-      setNearestFireExitPath(path);
+    const minPath = getNearestFireExitPath();
+    if (minPath) {
+      mapView.Navigation.clear();
+      mapView.Navigation.draw(minPath);
     }
-  }, [fireExits]);
-
-  useEffect(() => {
-    if (nearestFireExitPath) {
-      mapView.Navigation.draw(nearestFireExitPath);
-    }
-  }, [nearestFireExitPath]);
+  }, [position]);
 
   return null;
 }

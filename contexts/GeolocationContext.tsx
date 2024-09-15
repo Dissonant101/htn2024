@@ -24,10 +24,14 @@ export const GeolocationProvider: React.FC<{ children: ReactNode }> = ({
 
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition((p) => {
-      setPosition({
-        latitude: p.coords.latitude,
-        longitude: p.coords.longitude,
-      });
+      const timeout = setTimeout(() => {
+        setPosition({
+          latitude: p.coords.latitude,
+          longitude: p.coords.longitude,
+        });
+      }, 1000);
+
+      return () => clearTimeout(timeout);
     });
   }
 
