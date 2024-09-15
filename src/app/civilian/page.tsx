@@ -5,9 +5,13 @@ import MyMap from "@/components/MyMap";
 
 export default function Civilian() {
   return (
-    <div className="w-screen h-screen">
-      <MyNavbar />
-      <MyMap />
+    <div className="flex flex-col w-screen h-screen">
+      <div className="flex-shrink-0">
+        <MyNavbar />
+      </div>
+      <div className="flex-grow">
+        <MyMap />
+      </div>
     </div>
   );
 }
