@@ -39,7 +39,7 @@ We used Mappedin to create maps of buildings using floor plans. User location da
 ## What we learned
 - New frameworks and libraries 
 - Coming up with ideas is really hard
-- https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+- https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
 ## Roadmap
 
