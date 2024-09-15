@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">
+  <br>
+  <i>Firescape</i> for Hack The North 2024
+</h1>
 
-## Getting Started
+<h4 align="center">Evacuation. Simplified.</h4>
 
-First, run the development server:
+<p align="center">
+  <a href="#inspiration">Inspiration</a> •
+  <a href="#features">Features</a> •
+  <a href="#technologies">Technologies</a> •
+  <a href="#challenges">Challenges</a> •
+  <a href="#accomplishments">Accomplishments</a> •
+  <a href="#links">Links</a> •
+  <a href="#what-we-learned">What we learned</a> •
+  <a href="#contributors">Contributors</a> 
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Inspiration
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+According to StatCan, over 200 Canadian lives are claimed by fire-related incidents each year. In these dire emergencies, [minutes and seconds matter](https://www.statcan.gc.ca/o1/en/plus/1968-key-numbers-unintentional-fire-related-deaths-and-how-most-are-preventable). This is why we created **Firescape**, an app that charts indoor floor plans, predicts fire locations, and steers civilians to safety.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
+- Precise and accurate indoor maps of buildings of any type.
+- Custom algorithm calculating the shortest path to a fire exit.
+- Real-time location updates of those in the same building.
+- Smart formula to predict the location and intensity of fires based on location data.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologies
+We used Mappedin to create maps of buildings using floor plans. User location data is stored in Convex databases. The front-end is created in Next.js and deployed using Vercel.
 
-## Learn More
+## Challenges
+- We originally had our sights set on a hardware-based project; unfortunately, due to the limited quantity of microcontrollers, we were unable to continue our project. This cut our working time in half but we adapted to our circumstances and created an app that we are proud of.
+- Despite our 180-degree shift into a software-based project along with very unfamiliar and new technologies, our team had to quickly learn and adjust in order to compete with other contestants.
 
-To learn more about Next.js, take a look at the following resources:
+## Accomplishments
+- We are proud of finishing our product. We believe that our application would be effective in emergency situations and improve general fire safety.
+- Collaborating with teammates to learn a new tech stack in less than 18 hours is nothing less than impressive for all of us
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## What we learned
+- New frameworks and libraries 
+- Coming up with ideas is really hard
+- https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Roadmap
 
-## Deploy on Vercel
+Due to Mappedin's incredible AI capabilities of turning any floor plan into a 3D map, we believe that Firescape can be quickly adapted to any building, especially those of high risks of fire-related accidents, such as hotels.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributors
+---
+> Steven's GitHub [@Dissonant101](https://github.com/Dissonant101)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> Thomas's GitHub [@ThomasQi3141](https://github.com/ThomasQi3141)
+
+> Ali's GitHub [@aazam476](https://github.com/aazam476) 
+
+> Cindy's GitHub [@cindehaa](https://github.com/cindehaa)
+
