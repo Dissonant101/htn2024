@@ -1,6 +1,7 @@
 "use client";
 
 import { MapView, useMapData } from "@mappedin/react-sdk";
+import "@mappedin/react-sdk/lib/esm/index.css";
 
 export default function MyMap() {
   const { isLoading, error, mapData } = useMapData({
@@ -18,8 +19,8 @@ export default function MyMap() {
   }
 
   return mapData ? (
-    <MapView mapData={mapData}>
-      <div></div>
-    </MapView>
+    <div className="w-full h-full">
+      <MapView mapData={mapData}></MapView>
+    </div>
   ) : null;
 }

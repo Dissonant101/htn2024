@@ -5,7 +5,7 @@ import MyMap from "@/components/MyMap";
 
 export default function Civilian() {
   return (
-    <div>
+    <div className="w-screen h-screen">
       <MyNavbar />
       <MyMap />
     </div>
