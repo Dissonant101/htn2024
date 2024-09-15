@@ -11,7 +11,6 @@
   <a href="#technologies">Technologies</a> •
   <a href="#challenges">Challenges</a> •
   <a href="#accomplishments">Accomplishments</a> •
-  <a href="#links">Links</a> •
   <a href="#what-we-learned">What we learned</a> •
   <a href="#contributors">Contributors</a> 
 </p>
