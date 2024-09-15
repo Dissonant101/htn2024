@@ -9,8 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "bootstrap": "^5.3.3",
     "@mappedin/mappedin-js": "^5.40.1",
+    "@mappedin/react-sdk": "^6.0.1-beta.2",
+    "bootstrap": "^5.3.3",
     "convex": "^1.16.0",
     "next": "14.2.11",
     "react": "^18",
