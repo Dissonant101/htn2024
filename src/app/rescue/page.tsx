@@ -1,5 +1,5 @@
 "use client";
-import MyMap from "@/components/MyMap";
+import RescueMap from "@/components/RescueMap";
 import MyNavbar from "@/components/MyNavbar";
 
 export default function Rescue() {
@@ -9,7 +9,7 @@ export default function Rescue() {
                 <MyNavbar />
             </div>
             <div className="flex-grow">
-                <MyMap />
+                <RescueMap />
             </div>
         </div>
     );
