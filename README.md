@@ -46,6 +46,10 @@ We used Mappedin to create maps of buildings using floor plans. User location da
 Due to Mappedin's incredible AI capabilities of turning any floor plan into a 3D map, we believe that Firescape can be quickly adapted to any building, especially those of high risks of fire-related accidents, such as hotels.
 
 ## Contributors
+
+Steven Chen, Thomas Qi, Ali Azam, Cindy Li
+
+
 ---
 > Steven's GitHub [@Dissonant101](https://github.com/Dissonant101)
 
